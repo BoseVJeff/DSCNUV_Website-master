@@ -1,0 +1,88 @@
+{
+  "2019": [
+    {
+      "name": "Perin Shah",
+      "role": "DSC Lead",
+      "social_links": {
+        "instagram": "https://www.instagram.com/freeformelm",
+        "facebook": "https://www.facebook.com/shahperin",
+        "linkedin": "https://www.linkedin.com/in/perin-shah-63b5a4167/",
+        "github": "https://www.github.com/freeformelm"
+      },
+      "description": "Create. Not for the money. Not for the fame. Not for the recognition. But for the pure joy of creating something and sharing it",
+      "profilePic": "assets/images/teams/core_team/core_perin.png"
+    },
+    {
+      "name": "Dhvanan Kotecha",
+      "role": "Co-Organizer",
+      "social_links": {
+        "instagram": "https://www.instagram.com/d_kots111",
+        "facebook": "https://www.facebook.com/dkots0105",
+        "linkedin": "https://www.linkedin.com/in/dkots111/",
+        "github": "https://www.github.com/dkots111"
+      },
+      "description": "I am the architect of my life; I build its foundation and choose its contents",
+      "profilePic": "assets/images/teams/core_team/core_dhvanan.png"
+    },
+    {
+      "name": "Nitav Shah",
+      "role": "Web Development",
+      "social_links": {
+        "instagram": "https://www.instagram.com/fakenitav",
+        "facebook": "https://www.facebook.com/nitav.shah.7",
+        "linkedin": "https://www.linkedin.com/in/nitavshah",
+        "github": "https://www.github.com/shahnitav"
+      },
+      "description": "Stack Overflow is my mentor",
+      "profilePic": "assets/images/teams/core_team/core_nitav.png"
+    },
+    {
+      "name": "Nimit Savant",
+      "role": "Designing & Social Media",
+      "social_links": {
+        "instagram": "https://www.instagram.com/nimit_savant",
+        "facebook": "#",
+        "linkedin": "https://www.linkedin.com/in/nimit-savant-95b7571a0/",
+        "github": "https://www.github.com/Nimit1428"
+      },
+      "description": "Love to collaborate and lead",
+      "profilePic": "assets/images/teams/core_team/core_nimit.jpeg"
+    },
+    {
+      "name": "Sutiksh Verma",
+      "role": "Flutter",
+      "social_links": {
+        "instagram": "https://www.instagram.com/its_sutiksh",
+        "facebook": "https://www.facebook.com/sutiksh.verma.7",
+        "linkedin": "https://www.linkedin.com/in/sutikshverma27/",
+        "github": "https://www.github.com/Sutiksh"
+      },
+      "description": "A tech geek and passionate about learning new things",
+      "profilePic": "assets/images/teams/core_team/core_sutiksh.jpeg"
+    },
+    {
+      "name": "Abhijeet Ghosh",
+      "role": "Machine Learning",
+      "social_links": {
+        "instagram": "https://www.instagram.com/iliketoes42",
+        "facebook": "https://www.facebook.com/abhijeet.ghosh.338",
+        "linkedin": "https://www.linkedin.com/in/abhijeet-ghosh-963714178/",
+        "github": "https://github.com/AbhijeetGhosh"
+      },
+      "description": "Why be magic, when you can be the magician",
+      "profilePic": "assets/images/teams/core_team/core_abhijeet.jpeg"
+    },
+    {
+      "name": "Shivam Vyas",
+      "role": "Outreach Manager",
+      "social_links": {
+        "instagram": "https://www.instagram.com/shivam_vyas__",
+        "facebook": "https://www.facebook.com/shivamvyas.198",
+        "linkedin": "https://www.linkedin.com/in/shivam-vyas-36a517165/",
+        "github": "https://www.github.com/svyas5589"
+      },
+      "description": "Fortis Fortuna Adiuvat",
+      "profilePic": "assets/images/teams/core_team/core_shivam.jpg"
+    }
+  ]
+}
