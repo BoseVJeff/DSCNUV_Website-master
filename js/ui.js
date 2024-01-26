@@ -29,8 +29,8 @@ function buildEvent(event) {
   let imageUrl =
     event && event.image_url ? event.image_url : "assets/images/events/e1.png";
 
-if(btnText != null) {
-  return `
+  if (btnText != null) {
+    return `
   <div class="events-slider-item">
     <div class="card">
       <img
@@ -54,9 +54,9 @@ if(btnText != null) {
     </div>
   </div>
   `;
-}
-else {
-  return `
+  }
+  else {
+    return `
   <div class="events-slider-item">
     <div class="card">
       <img
@@ -79,7 +79,7 @@ else {
     </div>
   </div>
   `;
-}
+  }
 }
 
 
@@ -131,92 +131,4 @@ function buildAchievement(achievement) {
     <h4 class="title">${name}</h4>
   </div>
 `;
-}
-/* -------------------------------------------------------------
-        TEAMS RENDERING
-------------------------------------------------------------- */
-
-// Data
-
-$.holdReady(true);
-$.getJSON("data/teams.json", (data, status) => {
-  let teams = data;
-  // Presentation
-  const teamsContainer = $(".teams .section-body");
-  let htmlteams = "";
-  Object.keys(teams)
-    .sort((a, b) => parseInt(b) - parseInt(a))
-    .forEach(year => {
-      const team = teams[year];
-      htmlteams += buildTeam(year, team);
-    });
-  teamsContainer.html(htmlteams);
-  $.holdReady(false);
-});
-
-function buildTeam(year, team) {
-  let htmlTeam = "";
-  team.forEach(memeber => {
-    htmlTeam += buildTeamMember(memeber);
-  });
-  return `
-  <div class="team">
-  <h1 class="year">${year}</h1>
-  <div class="team-slider">
-    ${htmlTeam}
-  </div>
-</div>
-    `;
-}
-
-function buildTeamMember(memeber) {
-  let name = memeber && memeber.name ? memeber.name : "Add memeber Name";
-  let description = memeber && memeber.description ? memeber.description : "";
-  let role = memeber && memeber.role ? memeber.role : "";
-  let social = memeber && memeber.social_links ? memeber.social_links : [];
-  let profilePic =
-    memeber && memeber.profilePic
-      ? memeber.profilePic
-      : "assets/images/teams/placeholder.png";
-
-  return `
-    <div class="slider-item">
-              <div class="card text-center">
-                <div class="profile-pic bg-white px-5 pt-4">
-                  <img
-                    src="${profilePic}"
-                    class="card-img-top rounded-circle"
-                  />
-                </div>
-                <div class="card-body text-center">
-                  <p class="card-title">${name}</p>
-                  <p class="card-text">${role}</p>
-                  <p class="card-description">${description}</p>
-                </div>
-                <ul class="social list-inline text-center">
-                  <li class="list-inline-item">
-                    <a href="${
-                      social.instagram ? social.instagram : "#"
-                    }" target="_blank"><i class="fab fa-instagram"></i></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="${
-                      social.facebook ? social.facebook : "#"
-                    }" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="${
-                      social.linkedin ? social.linkedin : "#"
-                    }" target="_blank"><i class="fab fa-linkedin"></i> </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="${
-                      social.github ? social.github : "#"
-                    }" target="_blank"><i class="fab fa-github"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-    
-    `;
 }
