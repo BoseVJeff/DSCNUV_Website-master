@@ -185,10 +185,12 @@ $(document).ready(() => {
 
 function bsLightMode(params) {
   document.body.dataset.bsTheme = "light";
+  document.getElementById('theme-fab').innerText = "🌑";
 }
 
 function bsDarkMode(params) {
   document.body.dataset.bsTheme = "dark";
+  document.getElementById('theme-fab').innerText = "☀";
 }
 
 function toggleBsColorMode() {
