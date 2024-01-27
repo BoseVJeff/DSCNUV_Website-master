@@ -36,13 +36,13 @@
   <script src="js/main.js"></script>
 </head>
 
-<body data-theme='light'>
+<body data-bs-theme='dark' class="position-relative">
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top ps-3 pe-2">
       <div style="max-width: 300px;">
         <img src="assets/images/logo/logo-full.png" alt="" class=" img-fluid" />
       </div>
-      <button class="navbar-toggler ms-auto" type="button" data-toggle="collapse" data-target="#navbarMenu">
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -68,8 +68,8 @@
     style="background-image: url('assets/images/hero/hero-bg.png');">
     <div class="logo">
       <img src="assets/images/logo/logo.png" alt="logo" class="img-fluid" />
-      <h1>Developer Student Clubs</h1>
-      <h3>Navrachana University</h3>
+      <h1 class="text-body">Developer Student Clubs</h1>
+      <h3 class="text-secondary">Navrachana University</h3>
       <div class="mt-4">
         <span class="scroll-down">
           <a href="#events" class="btn btn-lg btn-primary me-3 px-5">Events</a>
@@ -168,7 +168,7 @@
             </div>
             <div class="card-body text-center">
               <h1 class="card-title">Connect</h1>
-              <p class=" card-text">
+              <p class=" card-text text-body">
                 Meet other students on campus interested in developer
                 technologies. All are welcome, including those with diverse
                 backgrounds and different majors.
@@ -183,7 +183,7 @@
             </div>
             <div class="card-body text-center">
               <h1 class="card-title">Learn</h1>
-              <p class=" card-text">
+              <p class=" card-text text-body">
                 Learn about a wide range of technical topics where new skills
                 are gained through hands-on workshops, in-person training and
                 project building activities.
@@ -198,7 +198,7 @@
             </div>
             <div class="card-body text-center">
               <h1 class="card-title">Grow</h1>
-              <p class=" card-text">
+              <p class=" card-text text-body">
                 Apply your new learnings and connections to build great
                 solutions for local problems. Advance your skills, career and
                 network. Give back to your community by helping others learn
@@ -218,7 +218,7 @@
         Developer Student clubs - Navrachna University</span>
     </p>
   </footer>
-  <script>
+  <!-- <script>
     var options = {
       // bottom: '64px', // default: '32px'
       bottom: '5vh', // default: '32px'
@@ -236,7 +236,7 @@
     }
     const darkmode = new Darkmode(options);
     window.addEventListener('load', () => { console.log('Loading Darkmode widget...'); darkmode.showWidget(); console.log('Loaded Darkmode widget!'); });
-  </script>
+  </script> -->
 </body>
 
 </html>

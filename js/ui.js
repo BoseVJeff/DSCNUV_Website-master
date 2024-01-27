@@ -39,7 +39,7 @@ function buildEvent(event) {
       />
       <div class="card-body text-center">
         <h3 class="card-title">${title}</h3>
-        <p class="card-text">${description}</p>
+        <p class="card-text text-body">${description}</p>
         <hr />
         <ul class="event-info list-inline">
           <li class="list-inline-item">
@@ -65,7 +65,7 @@ function buildEvent(event) {
       />
       <div class="card-body text-center">
         <h3 class="card-title">${title}</h3>
-        <p class="card-text">${description}</p>
+        <p class="card-text text-body">${description}</p>
         <hr />
         <ul class="event-info list-inline">
           <li class="list-inline-item">
