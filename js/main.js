@@ -37,7 +37,7 @@ $(document).ready(() => {
   //active progress
   var $progressBar = $(".e-list-progress");
   var $progressBarLabel = $(".slider__label");
-  $events_slider.on("beforeChange", function(
+  $events_slider.on("beforeChange", function (
     event,
     slick,
     currentSlide,
@@ -50,7 +50,7 @@ $(document).ready(() => {
     $progressBarLabel.text(calc + "% completed");
   });
   //active count list
-  $(".events-slider").on("beforeChange", function(
+  $(".events-slider").on("beforeChange", function (
     event,
     slick,
     currentSlide,
@@ -134,7 +134,7 @@ $(document).ready(() => {
   /*------------------------------------------------------
         back to top
 -------------------------------------------------------*/
-  $(document).on("click", ".back-to-top", function() {
+  $(document).on("click", ".back-to-top", function () {
     $("html,body").animate(
       {
         scrollTop: 0
@@ -149,7 +149,7 @@ $(document).ready(() => {
   if ($('.scroll-down a[href^="#"]').length) {
     $('.scroll-down a[href^="#"]')
       .not("#scrollUp")
-      .on("click", function(e) {
+      .on("click", function (e) {
         e.preventDefault();
         var target = this.hash;
         var $target = $(target);
@@ -165,7 +165,7 @@ $(document).ready(() => {
       });
   }
 
-  $("header nav .nav-item").click(function(e) {
+  $("header nav .nav-item").click(function (e) {
     $("header nav .nav-item.active").removeClass("active");
 
     var $parent = $(this);
@@ -173,3 +173,29 @@ $(document).ready(() => {
     e.preventDefault();
   });
 });
+
+/* -------------------------------------------------------------
+      Toggle Bootstrap Light/Dark mode
+  ------------------------------------------------------------- */
+/*!
+ * Color mode toggler for Bootstrap's docs (https://getbootstrap.com/)
+ * Copyright 2011-2023 The Bootstrap Authors
+ * Licensed under the Creative Commons Attribution 3.0 Unported License.
+ */
+
+function bsLightMode(params) {
+  document.body.dataset.bsTheme = "light";
+}
+
+function bsDarkMode(params) {
+  document.body.dataset.bsTheme = "dark";
+}
+
+function toggleBsColorMode() {
+  let currentColorMode = document.body.dataset.bsTheme;
+  if (currentColorMode === "dark") {
+    bsLightMode();
+  } else {
+    bsDarkMode();
+  }
+}

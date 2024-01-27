@@ -675,3 +675,25 @@ footer span:hover {
 .darkmode-toggle {
   z-index: 500;
 }
+
+/* Bootstrap Darkmode toggle */
+
+.fab {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  width: 2rem;
+  height: 2rem;
+  min-width: 44px;
+  min-height: 44px;
+  max-width: 10%;
+  max-height: 10%;
+  border-radius: 50%;
+  background-color: rebeccapurple;
+  /* Ensures that this will go over the events section background */
+  z-index: 10;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: none;
+}
