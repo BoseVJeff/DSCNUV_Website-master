@@ -37,8 +37,9 @@
 </head>
 
 <body data-bs-theme='auto' class="position-relative">
-  <button type="button" id="theme-fab" class="fab" onclick="toggleBsColorMode();">
-    🌑
+  <button type="button" id="theme-fab" class="fab"
+    onclick="(document.body.dataset.bsTheme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches)?bsLightMode():bsDarkMode()">
+    🌓
   </button>
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top ps-3 pe-2">
