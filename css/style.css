@@ -15,7 +15,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: white;
+  /* background-color: white; */
 }
 
 
@@ -31,11 +31,13 @@ h6 {
   padding: 0;
   margin: 0;
 }
+
 /* Bootstrap overload */
 .btn-primary {
   /* border: none; */
   background-color: var(--color-blue);
 }
+
 .btn-primary:hover,
 .btn-outline-primary:hover {
   border-color: var(--color-blue);
@@ -43,7 +45,7 @@ h6 {
 }
 
 /* Header */
-.navbar-light .navbar-nav .active > .nav-link {
+.navbar-light .navbar-nav .active>.nav-link {
   color: var(--color-blue);
   /* font-weight: 500; */
 }
@@ -55,6 +57,7 @@ h6 {
   -ms-transition: all ease-in-out 200ms;
   -o-transition: all ease-in-out 200ms;
 }
+
 .navbar-light .navbar-nav .nav-item:hover .nav-link {
   color: var(--color-blue);
 }
@@ -63,10 +66,12 @@ h6 {
 section {
   padding: 3rem 0;
 }
+
 .section-header h1 {
   color: var(--color-blue);
   margin: 0;
 }
+
 .section-header p {
   margin: 0;
 }
@@ -109,6 +114,7 @@ section {
   background: var(--color-blue);
   z-index: -1;
 }
+
 .events-slider-bg .events-slider {
   padding: 40px 0;
 }
@@ -116,20 +122,24 @@ section {
 .events-slider-controls .slider-nav {
   margin-bottom: 150px;
 }
+
 .events-slider-controls .slider-nav .slick-arrow {
   border: 3px solid #ffffff4d;
   display: block;
   color: #ffffff;
 }
+
 .events-slider-controls .slider-nav .slick-arrow:hover,
 .events-slider-controls .slider-nav .slick-arrow:active,
 .events-slider-controls .slider-nav .slick-arrow:focus {
   border: 3px solid #fff;
   color: #fff;
 }
+
 .events-slider-controls .slider-nav .slick-prev {
   margin-bottom: 30px;
 }
+
 .e-list-progress {
   display: block;
   width: 100%;
@@ -138,13 +148,11 @@ section {
   overflow: hidden;
   background-color: #ffffff4d;
   background-image: -o-linear-gradient(left, #fff, #fff);
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#fff),
-    to(#fff)
-  );
+  background-image: -webkit-gradient(linear,
+      left top,
+      right top,
+      from(#fff),
+      to(#fff));
   background-image: linear-gradient(to right, #fff, #fff);
   background-repeat: no-repeat;
   background-size: 0 100%;
@@ -158,10 +166,11 @@ section {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 .tp-slider-extra .first {
   font-size: 50px;
   font-weight: 600;
-  color:white;
+  color: white;
   height: 65px;
   width: 65px;
   display: inline-block;
@@ -170,10 +179,12 @@ section {
   transition: all 0.3s ease;
   text-align: center;
 }
+
 .tp-slider-extra .devider {
   font-size: 50px;
   color: #ffffff;
 }
+
 .tp-slider-extra .last {
   font-size: 24px;
   font-weight: 500;
@@ -197,12 +208,14 @@ section {
 .tps-arrow-center {
   margin-bottom: 80px;
 }
+
 .tps-arrow-center .slick-prev {
   position: absolute;
   left: 50%;
   bottom: -80px;
   margin-left: -70px;
 }
+
 .tps-arrow-center .slick-next {
   position: absolute;
   right: 50%;
@@ -234,19 +247,22 @@ section {
   -webkit-box-shadow: var(--events-box-shadow);
   -khtml-box-shadow: var(--events-box-shadow);
 }
+
 .events .card {
   position: relative;
 
   border: none;
 }
+
 .events .card .card-text {
   font-size: 14px;
-  color:black;
+  color: black;
 }
 
 .events .card .event-info i {
   margin-right: 5px;
 }
+
 .events .card .event-info {
   color: var(--color-red);
   font-size: 14px;
@@ -257,6 +273,7 @@ section {
 .about .image {
   position: relative;
 }
+
 .about .image .thumb {
   position: relative;
   display: block;
@@ -270,11 +287,13 @@ section {
   -ms-transform: rotate(1.8deg);
   transform: rotate(1.8deg);
 }
+
 .about .image .thumb img {
   width: 100%;
   height: 100%;
   color: #000;
 }
+
 .about .image:after {
   content: "";
   background-image: url("../assets/images/about/about-bg.svg");
@@ -326,6 +345,7 @@ section {
   margin-top: 10px;
   font-size: 14px;
 }
+
 /* Section - Hall of Fame/showcase */
 .showcase img {
   border-radius: 10px;
@@ -334,6 +354,7 @@ section {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
+
 .hall-of-fame-slider .slick-prev,
 .team-slider .slick-prev {
   position: absolute;
@@ -400,23 +421,26 @@ section {
 }
 
 .hall-of-fame-image {
-object-fit: cover;
-width: 100%;
-height: 350px;
+  object-fit: cover;
+  width: 100%;
+  height: 350px;
 }
 
 .hall-of-fame-slider .image:hover {
   cursor: pointer;
 }
+
 .hall-of-fame-slider .image:hover .overlay-content {
   opacity: 1;
   bottom: 0;
 }
+
 .hall-of-fame-slider .image:hover img {
   -webkit-transition: all 200ms;
   -o-transition: all 200ms;
   transition: all 200ms;
 }
+
 .hall-of-fame-slider .image:hover img {
   -webkit-filter: blur(2px);
   filter: blur(2px);
@@ -440,6 +464,7 @@ height: 350px;
   -o-transition: all ease-in-out 300ms;
   transition: all ease-in-out 300ms;
 }
+
 .team .card:hover {
   cursor: pointer;
   border: 3px solid var(--color-blue);
@@ -477,6 +502,7 @@ height: 350px;
   -o-transition: all ease-in-out 300ms;
   transition: all ease-in-out 300ms;
 }
+
 .team .social i:hover {
   color: var(--color-blue);
   font-size: 20px;
@@ -490,12 +516,15 @@ height: 350px;
 .team-slider .slick-prev {
   left: -40px;
 }
+
 .team-slider .slick-next {
   right: -40px;
 }
+
 .team-slider .slider-item {
   margin: 0 20px;
 }
+
 .teams .team {
   margin-bottom: 50px;
 }
@@ -519,7 +548,8 @@ footer span:hover {
   color: #fff;
 }
 
-.darkmode--activated p, .darkmode--activated h5 {
+.darkmode--activated p,
+.darkmode--activated h5 {
   color: white;
 }
 
@@ -589,14 +619,19 @@ footer span:hover {
   bottom: 0;
   width: 35%;
   height: 100%;
-  background-color:var(--color-yellow);
+  background-color: var(--color-yellow);
   z-index: -1;
+}
+
+.darkmode--activated #hero {
+  mix-blend-mode: difference;
 }
 
 .about .image {
   position: relative;
   isolation: isolate;
 }
+
 .about .image .thumb {
   isolation: isolate;
   position: relative;
@@ -611,12 +646,14 @@ footer span:hover {
   -ms-transform: rotate(1.8deg);
   transform: rotate(1.8deg);
 }
+
 .about .image .thumb img {
   isolation: isolate;
   width: 100%;
   height: 100%;
   color: #000;
 }
+
 .about .image:after {
   isolation: isolate;
   content: "";
@@ -637,4 +674,31 @@ footer span:hover {
 
 .darkmode-toggle {
   z-index: 500;
+}
+
+/* Bootstrap Darkmode toggle */
+
+.fab {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  width: 2rem;
+  height: 2rem;
+  min-width: 44px;
+  min-height: 44px;
+  max-width: 10%;
+  max-height: 10%;
+  border-radius: 50%;
+  background-color: var(--bs-tertiary-color);
+  border-color: var(--bs-border-color);
+  /* Ensures that this will go over the events section background */
+  z-index: 10;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: none;
+}
+
+.fab:hover {
+  background-color: var(--bs-secondary-color);
 }

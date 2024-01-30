@@ -10,36 +10,48 @@
   <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/line-awesome.min.css" />
-  <link rel="stylesheet" href="css/slick.css" />
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
+  <!-- <link rel="stylesheet" href="deps/bootstrap-4.6.2-dist/css/bootstrap.min.css" /> -->
+  <link rel="stylesheet" href="deps/bootstrap-5.3.2-dist/css/bootstrap.min.css" />
+  <!-- <link rel="stylesheet" href="css/line-awesome.min.css" /> -->
+  <link rel="stylesheet" href="deps/line-awesome-1.3.0/1.3.0/css/line-awesome.min.css" />
+  <!-- <link rel="stylesheet" href="css/slick.css" /> -->
+  <link rel="stylesheet" href="deps/slick-1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/responsive.css" />
 
   <!-- Scripts -->
-  <script src="https://kit.fontawesome.com/c4adcf1386.js"></script>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/slick.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="https://kit.fontawesome.com/c4adcf1386.js"></script> -->
+  <script src="deps/fontawesome-free-6.5.1-web/js/fontawesome.min.js"></script>
+  <!-- <script src="js/jquery.min.js"></script> -->
+  <script src="deps/jquery/jquery-3.7.1.min.js"></script>
+  <!-- <script src="js/slick.js"></script> -->
+  <script src="deps/slick-1.8.1/slick/slick.min.js"></script>
+  <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+  <!-- <script src="deps/bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script> -->
+  <script src="deps/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js" defer></script>
+  <!-- <script src="deps/darkmode-js/darkmode-js.min.js"></script> -->
+
   <script src="js/ui.js"></script>
   <script src="js/main.js"></script>
-
-  <!-- Material Stuff -->
-  <script src="tsout/material.js"></script>
 </head>
 
-<body data-theme='light'>
+<body data-bs-theme='auto' class="position-relative">
+  <button type="button" id="theme-fab" class="fab"
+    onclick="(document.body.dataset.bsTheme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches)?bsLightMode():bsDarkMode()">
+    🌓
+  </button>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top ps-3 pe-2">
       <div style="max-width: 300px;">
-        <img src="assets/images/logo/logo-full.png" alt="" class="img-fluid" />
+        <img src="assets/images/logo/logo-full.png" alt="" class=" img-fluid" />
       </div>
-      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarMenu">
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarMenu">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav m1-0 ms-auto">
           <li class="nav-item back-to-top active">
             <a class="nav-link" href="#">HOME</a>
           </li>
@@ -49,15 +61,9 @@
           <li class="nav-item scroll-down">
             <a class="nav-link" href="#about">ABOUT US</a>
           </li>
-          <li class="nav-item scroll-down">
-            <a class="nav-link" href="#showcase">ACHIVEMENTS</a>
-          </li>
-          <li class="nav-item scroll-down">
-            <a class="nav-link" href="#teams">TEAM</a>
-          </li>
-          <li class="">
-            <a class="ml-lg-3 btn btn-outline-primary d-none d-lg-block" href="tel:+91-9409279077">Contact us</a>
-          </li>
+          <!-- <li class="">
+            <a class="ms-lg-3 btn btn-outline-primary d-none d-lg-block" href="tel:+91-9409279077">Contact us</a>
+          </li> -->
         </ul>
       </div>
     </nav>
@@ -66,13 +72,13 @@
     style="background-image: url('assets/images/hero/hero-bg.png');">
     <div class="logo">
       <img src="assets/images/logo/logo.png" alt="logo" class="img-fluid" />
-      <h1>Developer Student Clubs</h1>
-      <h3>Navrachana University</h3>
+      <h1 class="text-body">Developer Student Clubs</h1>
+      <h3 class="text-secondary">Navrachana University</h3>
       <div class="mt-4">
         <span class="scroll-down">
-          <a href="#events" class="btn btn-lg btn-primary mr-3 px-5">Events</a>
+          <a href="#events" class="btn btn-lg btn-primary me-3 px-5">Events</a>
         </span>
-        <a href="tel:+91-9409279077" class="btn btn-lg">Contact us</a>
+        <!-- <a href="tel:+91-9409279077" class="btn btn-lg text-primary">Contact us</a> -->
       </div>
     </div>
   </section>
@@ -85,7 +91,7 @@
     <div class="section-body mt-5">
       <div class="events-slider-bg">
         <div class="container">
-          <div class="row">
+          <div class="row flex-row-reverse">
             <div class="col-xl-9 col-lg-10 offset-xl-1 order-lg-12">
               <div class="events-slider"></div>
             </div>
@@ -110,6 +116,7 @@
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
@@ -165,7 +172,7 @@
             </div>
             <div class="card-body text-center">
               <h1 class="card-title">Connect</h1>
-              <p class=" card-text">
+              <p class=" card-text text-body">
                 Meet other students on campus interested in developer
                 technologies. All are welcome, including those with diverse
                 backgrounds and different majors.
@@ -180,7 +187,7 @@
             </div>
             <div class="card-body text-center">
               <h1 class="card-title">Learn</h1>
-              <p class=" card-text">
+              <p class=" card-text text-body">
                 Learn about a wide range of technical topics where new skills
                 are gained through hands-on workshops, in-person training and
                 project building activities.
@@ -195,7 +202,7 @@
             </div>
             <div class="card-body text-center">
               <h1 class="card-title">Grow</h1>
-              <p class=" card-text">
+              <p class=" card-text text-body">
                 Apply your new learnings and connections to build great
                 solutions for local problems. Advance your skills, career and
                 network. Give back to your community by helping others learn
@@ -207,168 +214,33 @@
       </div>
     </div>
   </section>
-  <section id="showcase" class="showcase">
-    <div class="section-header text-center">
-      <p>NUV'S</p>
-      <h1>Hall of fame</h1>
-      <img src="assets/images/extra/wave.png" />
-    </div>
-    <div class="section-body mt-5">
-      <div class="container">
-        <div class="hall-of-fame-slider"></div>
-      </div>
-    </div>
-  </section>
-  <section id="teams" class="teams">
-    <div class="section-header text-center">
-      <p class="m-0">DSC-NUV'S</p>
-      <h1 class="m-0">Team</h1>
-      <img src="assets/images/extra/wave.png" />
-    </div>
-    <div class="section-body container mt-5"></div>
-  </section>
 
-  <section id="developer" class="team developer">
-    <div class="section-header text-center">
-      <h1 class="m-0">We made this!</h1>
-      <img src="assets/images/extra/wave.png" />
-    </div>
-    <div class="section-body mt-4">
-      <div class="container">
-        <div class="row">
-          <div class="offset-lg-1 col-sm-10 mb-3">
-            <div class="row">
-              <div class="col-sm-4 mb-2">
-                <div class="card text-center">
-                  <div class="profile-pic bg-white px-5 pt-4">
-                    <img src="assets/images/teams/developers/pruthvi_square.jpg" class="card-img-top rounded-circle" />
-                  </div>
-                  <div class="card-body text-center">
-                    <p class="card-title">Pruthvi Patel</p>
-                    <p class="card-text">FULL STACK DEVELOPER</p>
-                    <p>BTech CSE</p>
-                    <p>Navrachna University</p>
-                  </div>
-                  <ul class="social list-inline text-center">
-                    <li class="list-inline-item">
-                      <a href="https://www.instagram.com/pruthvi_patel__/" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="#" target="_blank">
-                        <i class="fab fa-facebook-square"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="https://www.linkedin.com/in/pruthvi-145/" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="https://github.com/pruthvi145" target="_blank">
-                        <i class="fab fa-github"> </i></a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="mailto:pruthvipatel145@gmail.com" target="_blank">
-                        <i class="fas fa-envelope"> </i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-sm-4 mb-2">
-                <div class="card text-center">
-                  <div class="profile-pic bg-white px-5 pt-4">
-                    <img src="assets/images/teams/developers/harshil_square.png" class="card-img-top rounded-circle" />
-                  </div>
-                  <div class="card-body text-center">
-                    <p class="card-title">Harshil Walia</p>
-                    <p class="card-text">DEVELOPER</p>
-                    <p>BTech CSE</p>
-                    <p>Navrachna University</p>
-                  </div>
-                  <ul class="social list-inline text-center">
-                    <li class="list-inline-item">
-                      <a href="#"><i class="fab fa-instagram"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="#"><i class="fab fa-facebook-square"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="#"><i class="fab fa-linkedin"></i> </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="#"><i class="fab fa-github"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="mailto:harshilwalia812998@gmail.com"><i class="fas fa-envelope"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-sm-4 mb-2">
-                <div class="card text-center">
-                  <div class="profile-pic bg-white px-5 pt-4">
-                    <img src="assets/images/teams/core_team/core_nitav.png" class="card-img-top rounded-circle" />
-                  </div>
-                  <div class="card-body text-center">
-                    <p class="card-title">Nitav Shah</p>
-                    <p class="card-text">DEVELOPER</p>
-                    <p>BTech CSE</p>
-                    <p>Navrachna University</p>
-                  </div>
-                  <ul class="social list-inline text-center">
-                    <li class="list-inline-item">
-                      <a href="https://www.instagram.com/fakenitav"><i class="fab fa-instagram"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="https://www.facebook.com/nitav.shah.7"><i class="fab fa-facebook-square"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="https://www.linkedin.com/in/nitavshah"><i class="fab fa-linkedin"></i> </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="https://www.github.com/shahnitav"><i class="fab fa-github"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="mailto:shahnitav@gmail.com"><i class="fas fa-envelope"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
   <footer>
     <p class="text-center">
-      &copy; copyright 2020. All rights reserved for
+      &copy; 2024 All rights reserved for
       <span class="back-to-top">
         Developer Student clubs - Navrachna University</span>
     </p>
   </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
-  <script>
+  <!-- <script>
     var options = {
-      bottom: '64px', // default: '32px'
-      right: '32px', // default: '32px'
+      // bottom: '64px', // default: '32px'
+      bottom: '5vh', // default: '32px'
+      // right: '32px', // default: '32px'
+      right: '3vw', // default: '32px'
       left: 'unset', // default: 'unset'
-      time: '0.5s', // default: '0.3s'
+      time: '0.1s', // default: '0.3s'
       mixColor: '#fff', // default: '#fff'
       backgroundColor: '#fff',  // default: '#fff'
       buttonColorDark: '#100f2c',  // default: '#100f2c'
       buttonColorLight: '#fff', // default: '#fff'
       saveInCookies: true, // default: true,
       label: '🌓', // default: ''
-      autoMatchOsTheme: true// default: true
+      autoMatchOsTheme: false // default: true
     }
     const darkmode = new Darkmode(options);
-    darkmode.showWidget();
-  </script>
+    window.addEventListener('load', () => { console.log('Loading Darkmode widget...'); darkmode.showWidget(); console.log('Loaded Darkmode widget!'); });
+  </script> -->
 </body>
 
 </html>
