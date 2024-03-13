@@ -65,8 +65,9 @@ $(document).ready(() => {
     check_number(smSliderCount)
   );
   function check_number(num) {
-    var IsInteger = /^[0-9]+$/.test(num);
-    return IsInteger ? "0" + num : null;
+    // var IsInteger = /^[0-9]+$/.test(num);
+    // return IsInteger ? "0" + num : null;
+    return isNaN(num) ? null : num.toString();
   }
 
   /* -----------------------------------------------------
