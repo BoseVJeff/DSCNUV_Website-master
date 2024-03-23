@@ -1,5 +1,14 @@
 [
   {
+    "title": "Demystifying Machine Learning: A Workshop for Beginners",
+    "image_url": "assets/images/events/ML_workshop_banner_with_logo.webp",
+    "description": "Unlock the Secrets of Intelligent Machines!\n\nJoin our ML workshop led by Kunal Sahoo, a passionate BTech CSE student, Robotics & AI/ML Head, and GDSC Lead at PDEU. Explore the fascinating world of Machine Learning.",
+    "date": "23 Mar, 2024",
+    "location": "Auditorium, 5th Floor, Navrachna University",
+    "form_link": "",
+    "btnText": ""
+  },
+  {
     "title": "Android Development Workshop",
     "image_url": "assets/images/events/Android-workshop-banner.webp",
     "description": "Join us for the Android Development Workshop, where you'll take your first steps into the exciting world of mobile app creation. Learn the fundamentals of Android development and create your own app in this interactive workshop. No prior experience is needed!",
